@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Log In | AnGawa</title>
+
+  <link rel="stylesheet" href="../styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+  <link rel="shortcut icon" href="../assets/favicon.svg" type="image/x-icon">
+
+</head>
+<body>
+  <div class="content">
+    <header>
+      <div class="header-flex">
+        <div class="header-left">
+          <img src="../assets/logo.png" alt="AnGawa Logo" width="200" onclick="document.location.replace('../index.html')">
+        </div>
+        <div class="header-center">
+          <a href="../index.html"><button class="nav-button">Home</button></a>
+          <a href="../pages/pricing.html"><button class="nav-button">Pricing</button></a>
+          <a href="../pages/contact.html"><button class="nav-button">Contact Us</button></a>
+        </div>
+        <div class="header-right">
+          <a href="../pages/signup.html"><button class="hollow-button">SIGNUP</button></a>
+          <a href="../pages/login.html"><button class="solid-button">LOGIN</button></a>
+        </div>
+
+        <div class="header-burger">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+      </div>
+      <div class="header-dropdown">
+          <a href="../index.html"><button class="nav-dropdown">Home</button></a>
+          <a href="../pages/pricing.html"><button class="nav-dropdown">Pricing</button></a>
+          <a href="../pages/contact.html"><button class="nav-dropdown">Contact Us</button></a>
+          <a href="../pages/signup.html"><button class="nav-dropdown">Sign Up</button></a>
+          <a href="../pages/login.html"><button class="nav-dropdown">Log In</button></a>
+      </div>
+    </header>
+    <main>
+      <section class="signup-section">
+        <div class="signup-main">
+          <div class="signup-form">
+            <h2 class="signup-title">Log In</h2>
+            <div class="entry-pair">
+              <label for="first-name">Email Address</label>
+              <input class="textfield" type="email" name="first-name" placeholder="e.g. johndoe@email.com">
+            </div>
+            <div class="entry-pair">
+              <label for="first-name">Password</label>
+              <input class="textfield" type="password" name="first-name" placeholder="********">
+            </div>
+            <button class="signup-button" type="submit">SUBMIT</button>
+          </div>
+          <div class="signup-text">
+            <h1 class="signup-header">Welcome back!</h1>
+            <p class="signup-description">Our community full of lazy work-a-holic people needs you!</p>
+          </div>
+        </div>
+      </section>
+    </main>
+  </div>
+  <div class="floating-btn" id="colorblind-btn">
+    <div class="floating-btn" id="colorblind-btn">
+      <i class="fas fa-eye"></i>
+    </div>
+  </div>
+
+  <div class="colorblind-menu hidden" id="colorblind-menu">
+    <label for="colorblind-mode">Colorblind Mode:</label>
+    <select id="colorblind-mode">
+      <option value="normal">Normal</option>
+      <option value="protanopia">Protanopia</option>
+      <option value="deuteranopia">Deuteranopia</option>
+      <option value="tritanopia">Tritanopia</option>
+    </select>
+  </div>
+
+  <script src="../script.js"></script>
+</body>
+</html>

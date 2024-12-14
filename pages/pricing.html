@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pricing | AnGawa</title>
+
+  <link rel="stylesheet" href="../styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+  <link rel="shortcut icon" href="../assets/favicon.svg" type="image/x-icon">
+
+</head>
+<body>
+  <div class="content">
+    <header>
+      <div class="header-flex">
+        <div class="header-left">
+          <img src="../assets/logo.png" alt="AnGawa Logo" width="200" onclick="document.location.replace('../index.html')">
+        </div>
+        <div class="header-center">
+          <a href="../index.html"><button class="nav-button">Home</button></a>
+          <a href="../pages/pricing.html"><button class="nav-button">Pricing</button></a>
+          <a href="../pages/contact.html"><button class="nav-button">Contact Us</button></a>
+        </div>
+        <div class="header-right">
+          <a href="../pages/signup.html"><button class="hollow-button">SIGNUP</button></a>
+          <a href="../pages/login.html"><button class="solid-button">LOGIN</button></a>
+        </div>
+
+        <div class="header-burger">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+      </div>
+      <div class="header-dropdown">
+          <a href="../index.html"><button class="nav-dropdown">Home</button></a>
+          <a href="../pages/pricing.html"><button class="nav-dropdown">Pricing</button></a>
+          <a href="../pages/contact.html"><button class="nav-dropdown">Contact Us</button></a>
+          <a href="../pages/signup.html"><button class="nav-dropdown">Sign Up</button></a>
+          <a href="../pages/login.html"><button class="nav-dropdown">Log In</button></a>
+      </div>
+    </header>
+    <main>
+      <section class="pricing-section">
+        <h1 class="pricing-heading">Pricing and Plans</h1>
+        <div class="pricing-table">
+          <div class="pricing-cell pricing-free">
+            <h3 class="pricing-title">Free</h3>
+            <div class="pricing-cost">
+              <h2 class="pricing-amount">$0</h2>
+              <div class="pricing-billing">Per user, billed monthly</div>
+            </div>
+            <div class="pricing-perks">
+              <div class="pricing-overview">Best for students</div>
+              <ul class="pricing-list">
+                <li class="pricing-item">Note-taking</li>
+                <li class="pricing-item">Flashcards Generator</li>
+                <li class="pricing-item">Quiz Generator</li>
+                <li class="pricing-item">Schedule Generator</li>
+              </ul>
+            </div>
+            <button style="font-weight: 600;" class="solid-button" type="submit">Get started for free</button>
+          </div>
+          <div class="pricing-cell pricing-pro">
+            <h3 class="pricing-title">Pro</h3>
+            <div class="pricing-cost">
+              <h2 class="pricing-amount">$5</h2>
+              <div class="pricing-billing">Per user, billed monthly</div>
+            </div>
+            <div class="pricing-perks">
+              <div class="pricing-overview">Best for achievers</div>
+              <ul class="pricing-list">
+                <li class="pricing-item">AI-assisted note-taking</li>
+                <li class="pricing-item">Mind Map Generator</li>
+                <li class="pricing-item">Canvas</li>
+                <li class="pricing-item">Eisenhower Matrix Generator</li>
+              </ul>
+            </div>
+            <button style="font-weight: 600;" class="solid-button" type="submit">Get started with Pro</button>
+          </div>
+          <div class="pricing-cell pricing-enterprise">
+            <h3 class="pricing-title">Enterprise</h3>
+            <div class="pricing-cost">
+              <h2 class="pricing-amount">$20</h2>
+              <div class="pricing-billing">Per user, billed monthly</div>
+            </div>
+            <div class="pricing-perks">
+              <div class="pricing-overview">Best for companies</div>
+              <ul class="pricing-list">
+                <li class="pricing-item">Note Live Share</li>
+                <li class="pricing-item">Task Distributor</li>
+                <li class="pricing-item">Custom AI Settings</li>
+                <li class="pricing-item">Meeting Summarizer</li>
+              </ul>
+            </div>
+            <button style="font-weight: 600;" class="solid-button" type="submit">Get Started with Enterprise</button>
+          </div>
+        </div>
+      </section>
+    </main>
+  </div>
+  <div class="floating-btn" id="colorblind-btn">
+    <div class="floating-btn" id="colorblind-btn">
+      <i class="fas fa-eye"></i>
+    </div>
+  </div>
+
+  <div class="colorblind-menu hidden" id="colorblind-menu">
+    <label for="colorblind-mode">Colorblind Mode:</label>
+    <select id="colorblind-mode">
+      <option value="normal">Normal</option>
+      <option value="protanopia">Protanopia</option>
+      <option value="deuteranopia">Deuteranopia</option>
+      <option value="tritanopia">Tritanopia</option>
+    </select>
+  </div>
+
+  <script src="../script.js"></script>
+</body>
+</html>
